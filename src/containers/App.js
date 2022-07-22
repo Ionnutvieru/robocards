@@ -43,7 +43,7 @@ class App extends Component {
             <CardList robots={filteredRobots} />
           </Scroll>
           <footer>
-            <h3>Made with <Heart className="red"/> and passion by Ionut</h3>
+            <h5>Made with <Heart className="red"/> and passion by Ionut</h5>
           </footer>
         </div>
       );

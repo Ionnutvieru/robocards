@@ -8,7 +8,7 @@ function RefreshButton() {
     }
 
     return (
-        <div className="pa3 bw2">
+        <div className="pa2 bw2">
             <Button variant="dark" onClick={refreshPage}>Refresh Robots List</Button>
         </div>
     )
