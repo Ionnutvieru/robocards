@@ -5,6 +5,7 @@ import Scroll from '../components/Scroll';
 import RefreshButton from '../components/RefreshButton';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Heart } from 'react-bootstrap-icons';
 
 class App extends Component {
   constructor() {
@@ -17,7 +18,7 @@ class App extends Component {
 
   componentDidMount() {
     //   https://jsonplaceholder.typicode.com/users
-    fetch('https://mocki.io/v1/eb86ced3-0841-4134-b93c-1c3a8e70fe10')
+    fetch('https://mocki.io/v1/3c5d8d36-1bc1-4546-a73c-dec83ddf67e5')
       .then(response => response.json())
       .then(users => { this.setState({ robots: users }) });
   }
@@ -41,6 +42,9 @@ class App extends Component {
           <Scroll>
             <CardList robots={filteredRobots} />
           </Scroll>
+          <footer>
+            <h3>Made with <Heart className="red"/> and passion by Ionut</h3>
+          </footer>
         </div>
       );
   }
